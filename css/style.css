@@ -1,0 +1,212 @@
+body#background1 {
+    background-image:url(../imagens/wallpaper1.png) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 86vh;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    overflow: hidden;
+}
+
+/* Reseta margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header e navegação */
+header {
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff7f50;
+}
+
+/* Ajuste para seções */
+section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 100px auto 0 auto; /* Ajuste para evitar sobreposição com o header fixo */
+}
+
+/* Estilo de cabeçalhos */
+h1, h2, h3 {
+    color: #fff;
+}
+
+/* Estilo para parágrafos */
+p {
+    color: #f5f5f5; /* Maior contraste */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Imagens responsivas */
+img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Personagens */
+.character {
+    margin-bottom: 20px;
+}
+
+/* Wallpapers */
+.wallpaper {
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.wallpaper img {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+/* Apresentação de personagens */
+.characters-presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.character img {
+    max-width: 400px;
+    height: auto;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeitos de rolagem */
+.animated-section {
+    opacity: 1; /* Visível inicialmente */
+    transition: opacity 1s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+[data-aos="fade-up"] {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+[data-aos="zoom-in"] {
+    transform: scale(0.9);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Estilo para vídeo */
+.intro-video video {
+    width: 100%;
+    height: auto;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 150px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #ff4f00;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Botões de chamada para ação na página inicial */
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.call-to-action button {
+    background-color: #ff4f00;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.call-to-action button:hover {
+    background-color: #e24400;
+}
+
+/* Seção de introdução na página inicial */
+.intro-section {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 100px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.intro-section h2 {
+    color: #ff7f50;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.intro-section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Rodapé */
+footer {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.9em;
+    margin: 0;
+}

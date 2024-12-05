@@ -1,0 +1,131 @@
+body#background1 {
+    background-image: url(../imagens/about_bg-story.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+}
+
+/* Reseta margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header e navegação */
+header {
+    background-color: #333;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff7f50;
+}
+
+/* Ajuste para seções */
+section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo de cabeçalhos */
+h1,
+h2,
+h3 {
+    color: #fff;
+}
+
+/* Estilo para parágrafos */
+p {
+    color: #f5f5f5;
+    /* Maior contraste */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Imagens responsivas */
+img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Personagens */
+.character {
+    margin-bottom: 20px;
+}
+
+/* Wallpapers */
+.wallpaper {
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.wallpaper img {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+/* Efeitos de rolagem */
+.animated-section {
+    opacity: 1;
+    /* Visível inicialmente */
+    transition: opacity 1s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+[data-aos="fade-up"] {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+[data-aos="zoom-in"] {
+    transform: scale(0.9);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Estilo para vídeo */
+.intro-video video {
+    width: 100%;
+    height: auto;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #ff4f00;
+    text-align: center;
+}
