@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wallpapers - Resident Evil 4 Remake</title>
+    <link rel="stylesheet" href="../css/wallpaper.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.0/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init();
+            const wallpapers = document.querySelectorAll('.wallpaper img');
+            wallpapers.forEach(wallpaper => {
+                wallpaper.addEventListener('click', function () {
+                    const modal = document.createElement('div');
+                    modal.classList.add('modal');
+                    modal.innerHTML = `
+                        <div class="modal-content">
+                            <span class="close-button">&times;</span>
+                            <img src="${this.src}" alt="Expanded Wallpaper">
+                        </div>
+                    `;
+                    document.body.appendChild(modal);
+                    modal.style.display = 'block';
+
+                    modal.querySelector('.close-button').addEventListener('click', function () {
+                        modal.remove();
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../pages/historia.html">História</a></li>
+                <li><a href="../pages/personagens.html">Personagens</a></li>
+                <li><a href="../pages/wallpaper.html">Wallpapers</a></li>
+                <li><a href="../pages/trailler.html">Trailler</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section id="wallpapers" class="animated-section" data-aos="fade-up">
+        <h2>Wallpapers</h2>
+        <div class="wallpaper">
+            <img src="../imagens/wallpaper1.png" alt="Wallpaper 1">
+            <a href="../imagens/wallpaper1.png" download>Baixar</a>
+        </div>
+        <div class="wallpaper">
+            <img src="../imagens/wallpaper2.png" alt="Wallpaper 2">
+            <a href="../imagens/wallpaper2.png" download>Baixar</a>
+        </div>
+        <div class="wallpaper">
+            <img src="../imagens/wallpaper3.png" alt="Wallpaper 3">
+            <a href="../imagens/wallpaper3.png" download>Baixar</a>
+        </div>
+        <div class="wallpaper">
+            <img src="../imagens/wallpaper4.png" alt="Wallpaper 4">
+            <a href="../imagens/wallpaper4.png" download>Baixar</a>
+        </div>
+        <div class="wallpaper">
+            <img src="../imagens/leo.jpg" alt="Wallpaper 5">
+            <a href="../imagens/leo.jpg" download>Baixar</a>
+        </div>
+    </section>
+</body>
+
+</html>
